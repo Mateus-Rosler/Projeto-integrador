@@ -1,0 +1,99 @@
+$header-title-font-size: 25px;
+$transition-title: 75px;
+$transition-subtitle: 27px;
+
+@mixin page-icon-size() {
+    width: 68px;
+    height: 68px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-color: black;
+
+    & img {
+        height: 70.2vh;
+    }
+
+    & header {
+        display: flex;
+        margin-top: 10px;
+
+        & table {
+            width: 100vw;
+
+            & img {
+                @include page-icon-size();
+                margin: 25px 15px 1px 15px;
+            }
+
+            & .Htitle {
+                font-size: $header-title-font-size; 
+            }
+
+            & td {
+                border-right: white 1px solid;
+
+                & div {
+                    display: inline-flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 15%;
+                    margin: 0 2% 0 2%;
+                }
+            }
+        }
+    }
+
+    & section {
+        & img {
+            margin-top: 8px;
+        }
+    }
+
+    & h1 {
+        font-size: 75px;
+    }
+
+    & h6 {
+        font-size: 25px;
+    }
+
+    & #make-a-line {
+        margin-bottom: 25px;
+    }
+
+    & footer {
+        & h6 {
+            border-top: #222121 1px solid;
+            padding-top: 25px;
+            font-size: 45px;
+        }
+
+        & img {
+            margin-top: 25px;
+            @include page-icon-size(); 
+        }
+        & div{
+            display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 15px;
+            & span{
+                font-size: $header-title-font-size;
+                margin-left: 10px;
+            }
+            & #home{
+                border-left: white 1px solid;
+                margin-left: 1200px;
+                padding-left: 50px;
+            }
+        }
+        
+    }
+}
