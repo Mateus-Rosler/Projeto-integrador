@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url(/Projeto\ integrador/variaveis/variables.scss);
+* {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+#mae{
+    &div1{
+        width: 20%;
+        &img{
+            width: 100px;
+        }
+    }
+}

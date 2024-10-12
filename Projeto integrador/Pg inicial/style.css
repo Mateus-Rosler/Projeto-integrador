@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+@import url(/Projeto\ integrador/variaveis/variables.scss);
 * {
+  width: 100vw;
   margin: 0;
   padding: 0;
   color: white;
@@ -6,13 +9,15 @@
 
 body {
   background-color: black;
-}
-body img {
-  height: 70.2vh;
+  font-family: "Share Tech", sans-serif;
+  overflow-x: hidden;
 }
 body header {
   display: flex;
   margin-top: 10px;
+}
+body header #Himg {
+  font-size: 25px;
 }
 body header table {
   width: 100vw;
@@ -20,20 +25,23 @@ body header table {
 body header table img {
   width: 68px;
   height: 68px;
-  margin: 25px 15px 1px 15px;
+  margin: 25px 15px 20px 15px;
 }
 body header table .Htitle {
   font-size: 25px;
 }
 body header table td {
+  border-collapse: collapse;
   border-right: white 1px solid;
 }
-body header table td div {
+body header table td button {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  width: 15%;
+  width: 100%;
   margin: 0 2% 0 2%;
+  background: none;
+  border: none;
 }
 body section img {
   margin-top: 8px;
@@ -46,6 +54,9 @@ body h6 {
 }
 body #make-a-line {
   margin-bottom: 25px;
+}
+body footer {
+  width: 100vw;
 }
 body footer h6 {
   border-top: #222121 1px solid;
@@ -61,7 +72,8 @@ body footer div {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-left: 15px;
+  background-color: #222;
+  margin-bottom: 0px;
 }
 body footer div span {
   font-size: 25px;
@@ -69,6 +81,5 @@ body footer div span {
 }
 body footer div #home {
   border-left: white 1px solid;
-  margin-left: 1200px;
-  padding-left: 50px;
+  margin-left: 1000px;
 }/*# sourceMappingURL=style.css.map */
